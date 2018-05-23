@@ -1,0 +1,6 @@
+void CEsp::DrawGranades()
+{
+	auto granade = Interfaces::CVar->FindVar("sv_grenade_trajectory");
+	auto granadespoof = new SpoofedConvar(granade);
+	granadespoof->SetInt(1);
+}
